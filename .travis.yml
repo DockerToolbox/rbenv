@@ -1,0 +1,145 @@
+matrix:
+  include:
+  - services:
+    - docker
+    name: Docker Version
+    script:
+      - docker --version
+  - services:
+    - docker
+    name: Alpine Linux 3.10
+    script:
+      - ./Dockerfiles/alpine/3.10/manage.sh build clean
+  - services:
+    - docker
+    name: Alpine Linux 3.11
+    script:
+      - ./Dockerfiles/alpine/3.11/manage.sh build clean
+  - services:
+    - docker
+    name: Alpine Linux 3.12
+    script:
+      - ./Dockerfiles/alpine/3.12/manage.sh build clean
+  - services:
+    - docker
+    name: Alpine Linux 3.13
+    script:
+      - ./Dockerfiles/alpine/3.13/manage.sh build clean
+  - services:
+    - docker
+    name: Amazon Linux 1
+    script:
+      - ./Dockerfiles/amazonlinux/1/manage.sh build clean
+  - services:
+    - docker
+    name: Amazon Linux 2
+    script:
+      - ./Dockerfiles/amazonlinux/2/manage.sh build clean
+  - services:
+    - docker
+    name: Centos 7
+    script:
+      - ./Dockerfiles/centos/7/manage.sh build clean
+  - services:
+    - docker
+    name: Centos 8
+    script:
+      - ./Dockerfiles/centos/8/manage.sh build clean
+  - services:
+    - docker
+    name: Debian 9 (Stretch)
+    script:
+      - ./Dockerfiles/debian/9/manage.sh build clean
+  - services:
+    - docker
+    name: Debian 9 (Stretch Slim)
+    script:
+      - ./Dockerfiles/debian/9-slim/manage.sh build clean
+  - services:
+    - docker
+    name: Debian 10 (Buster)
+    script:
+      - ./Dockerfiles/debian/10/manage.sh build clean
+  - services:
+    - docker
+    name: Debian 10 (Buster Slim)
+    script:
+      - ./Dockerfiles/debian/10-slim/manage.sh build clean
+  - services:
+    - docker
+    name: Debian 11 (Bullseye)
+    script:
+      - echo "Skipping build as travis currently due to known issue - local build works fine"
+  - services:
+    - docker
+    name: Debian 11 (Bullseye Slim)
+    script:
+      - echo "Skipping build as travis currently due to known issue - local build works fine"
+  - services:
+    - docker
+    name: Ubuntu 16.04 (Xenial Xerus / Xenial)
+    script:
+      - ./Dockerfiles/ubuntu/16.04/manage.sh build clean
+  - services:
+    - docker
+    name: Ubuntu 18.04 (Bionic Beaver / Bionic)
+    script:
+      - ./Dockerfiles/ubuntu/18.04/manage.sh build clean
+  - services:
+    - docker
+    name: Ubuntu 20.04 (Focal Fossa / Focal)
+    script:
+      - ./Dockerfiles/ubuntu/20.04/manage.sh build clean
+  - services:
+    - docker
+    name: Dockerfile Linting (Hadolint)
+    before_install:
+    - git clone https://github.com/TravisToolbox/hadolint
+    install:
+    - "./hadolint/install.sh"
+    script:
+    - "./hadolint/scan.sh"
+  - language: ruby
+    name: Github Linguist (rvm 2.7)
+    rvm: 2.7
+    before_install:
+    - git clone https://github.com/TravisToolbox/github-linguist
+    install:
+    - "./github-linguist/install.sh"
+    script:
+    - "./github-linguist/scan.sh"
+  - language: ruby
+    name: YAML Linting (rvm 2.7)
+    rvm: 2.7
+    before_install:
+    - git clone https://github.com/TravisToolbox/yaml-lint
+    install:
+    - "./yaml-lint/install.sh"
+    script:
+    - "./yaml-lint/scan.sh"
+  - language: bash
+    name: Shellcheck (Bash)
+    os: linux
+    arch: arm64-graviton2
+    before_install:
+    - git clone https://github.com/TravisToolbox/shellcheck
+    install:
+    - "./shellcheck/install.sh"
+    script:
+    - "./shellcheck/scan.sh"
+  - language: ruby
+    name: Link Checking (rvm 2.7)
+    rvm: 2.7
+    env:
+    - WHITELIST="https://img.shields.io"
+    - EXCLUDE_FILES="CHANGELOG.md"
+    before_install:
+    - git clone https://github.com/TravisToolbox/awesomebot
+    install:
+    - "./awesomebot/install.sh"
+    script:
+    - "./awesomebot/scan.sh"
+notifications:
+  email: false
+  slack:
+    secure: elSO/SVoYPacD1oMJ9NsvVtEzBvbFHBv4J1bGRz6XsgANaa9gX9q0NqfIsaVHGSUZwz4/lKZRpHFwCV5KEynLh+rzrjIe0RN8k2WxEjLZq4SuFZ3I/xBIeo+chF2D+zzA4dcAHe9ka9MvdsDEQfcAnlFFawmv0WdaOMmaSPc6aM6DNA0RpSiTJSEhicjvMDGNCBsb3GIbJvDKNBDm2dO/tP4B46SlyYhgjRlQj67fkdo6R3uNVE0p+JEGUe40yfMxwGhuIZYh9YiyV/Iy9Tk177KhBm7NyXM+6j9/vrduBxmgiurC2v4X4RfU5znQszWyc6CY3deBbi6gUpR8oDraIspvokFXzl1I7JGLbX022+BtHMlXnJ1A8snS0CDtU+PDbHcT9MmwyJ/CNLgfSOx0SDk5YRaA2HGylqwOdTJHeaa40Cokyg9gMYR7Jk0JBabaFBSUKo87RecsK8LeuKQpmUfQFkq3QQrpzD+T4nUz3NPAsEiazwvUNlPm+OMh+MeoYG3kd8qrY4/oJnFbp3VGVRSlvVyH0PidFKFEudsLkt50cVP2gRiZVmxpE1911QfGWdF8cA2peYlW+AyMvFwutAR1J4ScMhtF6i3kUb1suG4tKSWUy+gj1IScQv/A218JlMy+pdoH+uk7DOmpVK+1xDmeoSpk/558qdv724dfdY=
