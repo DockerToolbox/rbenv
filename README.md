@@ -75,3 +75,44 @@ We try to offer as many operating system flavours as possible, but we only use c
 ```
   wolfsoftwareltd/rbenv-<os>:<version> e.g. wolfsoftwareltd/rbenv-debian:10
 ```
+
+## Development
+
+### Generate Dockerfiles
+
+This can be done from any level of the directory tree and is recursive.
+
+```
+./manange-all.sh generate
+```
+
+### Build Containers
+
+This can be done from any level of the directory tree and is recursive.
+
+```
+./manange-all.sh build [clean]
+```
+
+### Scan Containers
+
+This can be done from any level of the directory tree and is recursive.
+
+```
+./manange-all.sh scan         
+```
+
+### Publish Containers
+
+This can be done from any level of the directory tree and is recursive.
+
+```
+./manange-all.sh publish
+```
+
+If you want to publish the containers you will need to update the [utils.sh](Scripts/utils.sh) script and change the following lines.
+
+```
+DOCKER_HUB_ORG='wolfsoftwareltd'
+CONTAINER_PREFIX='rbenv'
+```
