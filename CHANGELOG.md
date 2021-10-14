@@ -9,6 +9,8 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 - update [`[head]`](https://github.com/DockerToolbox/rbenv/commit/)
 
+- update [`[9af923c]`](https://github.com/DockerToolbox/rbenv/commit/9af923c36aef8f1bcd8b1b2ee0af6b5e43d3c033)
+
 - update [`[2bf469d]`](https://github.com/DockerToolbox/rbenv/commit/2bf469d0856dce0e7b5bf292cc6455c13e277cf8)
 
 - update [`[24ba799]`](https://github.com/DockerToolbox/rbenv/commit/24ba79993efe4bc693ac6a732025055672673bfb)
