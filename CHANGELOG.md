@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/DockerToolbox/rbenv/compare/v0.1.0...HEAD)
 
-- update [`[head]`](https://github.com/DockerToolbox/rbenv/commit/)
+- Move to anyenv [`[head]`](https://github.com/DockerToolbox/rbenv/commit/)
+
+- update [`[ccd1b7c]`](https://github.com/DockerToolbox/rbenv/commit/ccd1b7c495bc205696c6d9fdb9bfeb2a25b4f752)
 
 - update [`[9af923c]`](https://github.com/DockerToolbox/rbenv/commit/9af923c36aef8f1bcd8b1b2ee0af6b5e43d3c033)
 

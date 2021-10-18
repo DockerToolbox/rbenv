@@ -35,6 +35,8 @@
 
 This is a selection of Docker containers preinstalled with [rbenv](https://github.com/rbenv/rbenv) so that you can use any version of Terragrunt you want, or even install multiple versions.
 
+We use our [anyenv](https://github.com/DockerToolbox/anyenv) containers as the base to keep the install simple and consistent.
+
 We try to offer as many operating system flavours as possible, but we only use currently supported versions of each one.
 
 | Dockerfile | Docker Hub Repo | Docker Hub Tags |
