@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/DockerToolbox/rbenv/compare/v0.1.0...HEAD)
 
-- Move autobuilds to weekly [`[head]`](https://github.com/DockerToolbox/rbenv/commit/)
+- update [`[head]`](https://github.com/DockerToolbox/rbenv/commit/)
+
+- Move autobuilds to weekly [`[4a21bfd]`](https://github.com/DockerToolbox/rbenv/commit/4a21bfdedf69a3344d422e33d3b0335fa747f579)
 
 - Move to anyenv [`[55d5b5c]`](https://github.com/DockerToolbox/rbenv/commit/55d5b5cbaff157195261c6ace057bfb835d37701)
 
