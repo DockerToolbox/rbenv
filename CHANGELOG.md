@@ -9,6 +9,8 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 - update [`[head]`](https://github.com/DockerToolbox/rbenv/commit/)
 
+- update [`[61bdb7b]`](https://github.com/DockerToolbox/rbenv/commit/61bdb7bcae9a758ca9f035201e2ad2a976cadaa4)
+
 - Move autobuilds to weekly [`[4a21bfd]`](https://github.com/DockerToolbox/rbenv/commit/4a21bfdedf69a3344d422e33d3b0335fa747f579)
 
 - Move to anyenv [`[55d5b5c]`](https://github.com/DockerToolbox/rbenv/commit/55d5b5cbaff157195261c6ace057bfb835d37701)
