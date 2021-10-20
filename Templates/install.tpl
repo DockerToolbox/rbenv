@@ -1,1 +1,1 @@
-RUN anyenv install pyenv
+RUN anyenv install rbenv
