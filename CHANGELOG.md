@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/DockerToolbox/rbenv/compare/v0.1.0...HEAD)
 
-- update [`[head]`](https://github.com/DockerToolbox/rbenv/commit/)
+- udpate [`[head]`](https://github.com/DockerToolbox/rbenv/commit/)
+
+- update [`[c096c80]`](https://github.com/DockerToolbox/rbenv/commit/c096c80915e940fa508be9c70e088374bacfb862)
 
 - update [`[61bdb7b]`](https://github.com/DockerToolbox/rbenv/commit/61bdb7bcae9a758ca9f035201e2ad2a976cadaa4)
 

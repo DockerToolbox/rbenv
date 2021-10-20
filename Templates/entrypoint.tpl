@@ -1,4 +1,4 @@
-ENV PATH="/root/.anyenv/envs/pyenv/bin:$PATH"
+ENV PATH="/root/.anyenv/envs/rbenv/bin:$PATH"
 
 WORKDIR /root
 
