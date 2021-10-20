@@ -9,6 +9,8 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 - udpate [`[head]`](https://github.com/DockerToolbox/rbenv/commit/)
 
+- udpate [`[86b9c65]`](https://github.com/DockerToolbox/rbenv/commit/86b9c652d58a7bcf3a6890387ee66e8532392132)
+
 - udpate [`[233427d]`](https://github.com/DockerToolbox/rbenv/commit/233427d80f0e58528d0b5eb14160cf7128b64592)
 
 - update [`[c096c80]`](https://github.com/DockerToolbox/rbenv/commit/c096c80915e940fa508be9c70e088374bacfb862)
